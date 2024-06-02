@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+
     <title>Dice-Game</title>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -43,51 +38,56 @@
     </div>
 
     <!-- The main page of the game -->
-    <section class="main-section">
-        <div class="container">
-            <h1>Let's Play</h1>
 
-            <!-- Dice section -->
-            <div class="row">
-                <div class="col-6 dice">
-                    <p class="player1">Player 1</p>
-                    <img src="images/dice6.png" alt="dice 6">
-                </div>
-                <div class="col-6 dice">
-                    <p class="player2">Player 2</p>
-                    <img src="images/dice6.png" alt="dice 6">
-                </div>
-            </div>
+    <!-- Section for the welcome message -->
+    <section class="welcome-section">
+        <!-- Background elements -->
+        <div class="main__bg">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
         </div>
-    </section>
-
-    <!-- Button section -->
-    <section>
-        <div class="container">
-            <!-- Roll the dice button -->
-            <button type="button">
-                Roll the dice
-            </button>
+  
+        <div class="container gamerules">
+          <!-- Heading for the welcome message -->
+          <h1 id="header">Dice Games Rules</h1>
+          <div class="dicegame-rules">
+            <p class="game-rules">
+              1. Click the "Edit Names" button to change the names.
+            </p>
+            <p class="game-rules">
+              2. Click the "Roll Dice" button to roll the dice.
+            </p>
+            <p class="game-rules">
+              3. If both players roll the same number, it's a draw or tie.
+            </p>
+            <p class="game-rules">
+              4. The player with the highest dice number wins.
+            </p>
+            <p class="game-rules">
+              5. Click the "Reset" button to start the game over and reset scores.
+            </p>
+          </div>
         </div>
-        <div class="container">
-            <!-- Edit player name button -->
-            <button type="button">
-                EDIT PLAYER NAMES
-            </button>
-            <!-- Restart game button -->
-            <button type="button">
-                RESTART
-            </button>
+  
+        <div class="container bottom">
+          <!-- Button to play the dice game -->
+  
+          <button type="button" id="index-btn">
+            <a href="dicegame.html" id="index-text">PLAY DICE GAME</a>
+          </button>
         </div>
-    </section>
-
-    <section>
-        <h2>Leaderboard</h2>
-    </section>
-
-    <footer>
-        <small>Dice Game by Siya Mthonjeni & Mbali Puso</small>
-    </footer>
+      </section>
+      <!-- Footer section -->
+      <footer>
+        <!-- Heading for the footer -->
+        <h2 class="footer-h1">
+          🎲 Dice Game By Siya Mthonjeni & Mbali Puso 🎲
+        </h2>
+      </footer>
 
     <script src="script.js"></script>
 </body>
