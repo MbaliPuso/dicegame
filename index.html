@@ -19,19 +19,28 @@
 <body>
     <!-- The splash page -->
     <div class="splash">
+        <div class="main__bg">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
         <h2 class="fade-in">Dice Game</h2>
-        <img class="logo-img" src="images/logo.png" alt="game-logo">
-        <div class="dots-container">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-        
-          
+          <img class="logo-img fade-in" src="images/logo.png" alt="game-logo">
+    </div> 
+    <!-- Loader  -->
+    <div class="dots-loader appearIn">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+  </div>  
+         
     </div>
 
+<<<<<<< HEAD
     <!-- The main page of the game -->
 
     <section class="welcome-section">
@@ -82,6 +91,58 @@
           🎲 Dice Game By Siya Mthonjeni & Mbali Puso 🎲
         </h2>
       </footer>
+=======
+    <section class="welcome-section">
+    <!-- Background for page -->
+    <div class="main__bg">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <!-- Game rules section -->
+    <div class="container gamerules">
+        <!-- Heading for the welcome message -->
+        <h1 id="header">Dice Games Rules</h1>
+        <!-- Container for game rules -->
+        <div class="dicegame-rules">
+          <p class="game-rules">
+            1. Click the "Edit Names" button to change the names.
+          </p>
+          <p class="game-rules">
+            2. Click the "Roll Dice" button to roll the dice.
+          </p>
+          <p class="game-rules">
+            3. If both players roll the same number, it's a draw or tie.
+          </p>
+          <p class="game-rules">
+            4. The player with the highest dice number wins.
+          </p>
+          <p class="game-rules">
+            5. Click the "Reset" button to start the game over and reset scores.
+          </p>
+        </div>
+    </div>
+
+    <div class="container bottom">
+        <!-- Button to play the dice game -->
+        <a href="dicegame.html">
+          <button id="index-btn">LET'S PLAY</button>
+        </a>
+    </div>
+    <footer>
+      <!-- Heading for the footer -->
+      <h2 class="footer-h1">
+        🎲 Dice Game By Siya Tonjeni & Mbali Puso 🎲
+      </h2>
+  </footer>
+    </section>
+    
+   
+>>>>>>> 170db40eb271ba8dde97221a40af011c9a16a257
 
     <script src="script.js"></script>
 </body>
